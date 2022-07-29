@@ -1,3 +1,4 @@
+import { PokemonService } from './../services/pokemon.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -5,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './pokemon-list.component.html',
   styleUrls: ['./pokemon-list.component.css']
 })
-export class PokemonListComponent {
+export class PokemonListComponent{
 
-  pokemons = ['Gastly', 'Haunter' ,'Gengar']
-  
+  constructor(public pokemonService: PokemonService){}
+
 }

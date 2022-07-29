@@ -15,7 +15,6 @@ export class PokemonCardComponent {
 
   pegarImagemPokemon(){
     const numeroFormatado = this.zerosAntes(this.id);
-    console.log(this.id)
 
     return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${numeroFormatado}.png`
   }
